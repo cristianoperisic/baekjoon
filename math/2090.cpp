@@ -3,12 +3,12 @@
 #include <vector>
 using std::vector;
 
-long long gcd(long long a, long long b) {				// ÃÖ´ë °ø¾à¼ö        ¿À¹öÇÃ·Î¿ì ´ëºñÇØ¼­ long long ¹ÝÈ¯
+long long gcd(long long a, long long b) {				// ìµœëŒ€ ê³µì•½ìˆ˜        ì˜¤ë²„í”Œë¡œìš° ëŒ€ë¹„í•´ì„œ long long ë°˜í™˜
 	if (a < b)
 		std::swap(a, b);
 
 	long long r;
-	while (b != 0) {									// µÎ ¼öÀÇ ³ª¸ÓÁö¿Í ÀÛÀº ¼ö¸¦ °è¼Ó ºñ±³ÇØ°¡¸ç
+	while (b != 0) {									// ë‘ ìˆ˜ì˜ ë‚˜ë¨¸ì§€ì™€ ìž‘ì€ ìˆ˜ë¥¼ ê³„ì† ë¹„êµí•´ê°€ë©°
 		r = a % b;
 		a = b;
 		b = r;
@@ -17,8 +17,8 @@ long long gcd(long long a, long long b) {				// ÃÖ´ë °ø¾à¼ö        ¿À¹öÇÃ·Î¿ì ´ë
 	return a;
 }
 
-long long lcm(long long a, long long b) {				// ÃÖ¼Ò °ø¹è¼ö
-	return a / gcd(a, b) *b;							// ¿À¹öÇÃ·Î¿ì ´ëºñÇØ¼­ ³ª´©°í °öÇÔ
+long long lcm(long long a, long long b) {				// ìµœì†Œ ê³µë°°ìˆ˜
+	return a / gcd(a, b) *b;							// ì˜¤ë²„í”Œë¡œìš° ëŒ€ë¹„í•´ì„œ ë‚˜ëˆ„ê³  ê³±í•¨
 }
 
 int main(void) {
@@ -41,7 +41,7 @@ int main(void) {
 	long long max = myVector[0];
 
 	for (int i = 1; i < N;i++) {
-		max = lcm(max, myVector[i]);					// N°³ÀÇ ¼öÀÇ ÃÖ´ë°ø¾à¼ö
+		max = lcm(max, myVector[i]);					// Nê°œì˜ ìˆ˜ì˜ ìµœëŒ€ê³µì•½ìˆ˜
 	}
 
 	long long a = max;
