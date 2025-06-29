@@ -6,7 +6,7 @@ using std::vector;
 int main(void) {
 	int N,K;
 	int n = 0;
-	std::cin >> N >> K;
+	std::cin >> N >> K;                                             // 백준 23968
 
 	vector<int> myVector(N);
 
