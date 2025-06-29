@@ -25,7 +25,7 @@ int main(void) {
 	int N;
 	std::cin >> N;
 
-	if (N == 1) {
+	if (N == 1) {								// 예외처리, N=1이면 그대로 출력
 		int k;
 		std::cin >> k;
 		std::cout << k<<'/'<<1;
@@ -33,7 +33,7 @@ int main(void) {
 		return 0;
 	}
 
-	vector<int> myVector(N);
+	vector<int> myVector(N);						// 입력 받고
 	for (int i = 0; i < N; i++) {
 		std::cin >> myVector[i];
 	}
@@ -41,14 +41,14 @@ int main(void) {
 	long long max = myVector[0];
 
 	for (int i = 1; i < N;i++) {
-		max = lcm(max, myVector[i]);					// N개의 수의 최대공약수
+		max = lcm(max, myVector[i]);					// N개의 수의 최대공약수, 차례대로 버블정렬 하듯이 
 	}
 
 	long long a = max;
 	long long b=0;
 
 	for (int i = 0; i < N;i++) {
-		b += max / myVector[i];
+		b += max / myVector[i];						// b는 myVector의 원소의 역수x최대공약수의 합
 	}
 
 	long long min = gcd(a, b);
