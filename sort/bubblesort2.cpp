@@ -3,7 +3,7 @@
 #include <algorithm>
 using std::vector;
 
-int main(void) {										// ¹éÁØ 23970
+int main(void) {										// ë°±ì¤€ 23970
 	int N;
 	std::cin >> N;
 
@@ -24,17 +24,17 @@ int main(void) {										// ¹éÁØ 23970
 
 	for (int i = 0; i < N;i++) {
 		for (int j = 0; j < N - 1 - i;j++) {
-			if (myVector1[j] > myVector1[j + 1]) {			//ºñ±³ÇÏ¸é¼­ ¹öºí Á¤·Ä
+			if (myVector1[j] > myVector1[j + 1]) {			//ë¹„êµí•˜ë©´ì„œ ë²„ë¸” ì •ë ¬
 				std::swap(myVector1[j], myVector1[j + 1]);
 				if ((myVector1[j] == myVector2[j]) && (myVector1[j + 1] == myVector2[j + 1])) {
-					if (myVector1 == myVector2) {      // swapÀ» ÇÏ°í ³ª¼­ ±× ¿ø¼Ò°¡ myVector2¿Í ÀÏÄ¡ÇÏ´ÂÁö
-						std::cout << 1;				   // È®ÀÎÇÏ°í ÀÏÄ¡ÇÏ´ÂÁö °Ë»ç
+					if (myVector1 == myVector2) {      // swapì„ í•˜ê³  ë‚˜ì„œ ê·¸ ì›ì†Œê°€ myVector2ì™€ ì¼ì¹˜í•˜ëŠ”ì§€
+						std::cout << 1;				   // í™•ì¸í•˜ê³  ì¼ì¹˜í•˜ëŠ”ì§€ ê²€ì‚¬
 						return 0;
 					}
 				}
 			}
 		}
 	}
-	std::cout << 0;			// loop Å»ÃâÇÏ¸é 0À» ¹ñ¾î¶ó
+	std::cout << 0;			// loop íƒˆì¶œí•˜ë©´ 0ì„ ë±‰ì–´ë¼
 	return 0;
 }
