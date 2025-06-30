@@ -3,13 +3,13 @@
 #include <numeric>
 using std::vector;
 
-int main(void) {							//���� 1037 ���
-	int N;									//�̰� Ʈ���Ѱ� ��ü �Է��� �ּҰ������ �ǰڴٰ�
-	std::cin >> N;							//�����ߴµ� �ƴ�
+int main(void) {							//백준 1037 약수
+	int N;									//이거 트롤한게 전체 입력의 최소공배수면 되겠다고
+	std::cin >> N;							//생각했는데 아님
 
-	vector<int> myVector(N);				// �׳� 1, �ڱ��ڽ� ������ ��� ��� �ִϱ� 
+	vector<int> myVector(N);				// 그냥 1, 자기자신 제외한 모든 약수 주니까 
 
-	for (int i = 0; i < N; i++) {			// ����������X����ū�� �ϸ� ������ ���͹���
+	for (int i = 0; i < N; i++) {			// 제일작은거X제일큰거 하면 본인이 나와버림
 		std::cin >> myVector[i];
 	}
 
