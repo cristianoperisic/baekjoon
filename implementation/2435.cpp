@@ -2,7 +2,7 @@
 #include <vector>
 using std::vector;
 
-int main(void) {
+int main(void) {								// 백준 2435 기상청 인턴 신현수 (브푸트포스 알고리즘)
 	int N, K;
 	std::cin >> N >> K;
 
