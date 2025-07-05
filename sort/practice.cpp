@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-using std::vector;					// ¹éÁØ 2751¹ø
+using std::vector;					// ë°±ì¤€ 2751, sortë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš©
 
 int main(void) {
 	int N;
