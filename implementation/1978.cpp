@@ -2,7 +2,7 @@
 #include <vector>
 using std::vector;
 
-bool prime_number(int n);		         	// ¹éÁØ 1978
+bool prime_number(int n);		         	// ë°±ì¤€ 1978
 int main(void) {
 	int N;
 	std::cin>> N;
@@ -23,10 +23,10 @@ int main(void) {
 }
 
 bool prime_number(int n) {
-	if (n <2)							// 0,1Àº ¼Ò¼ö ¾Æ´Ô
+	if (n <2)							// 0,1ì€ ì†Œìˆ˜ ì•„ë‹˜
 		return false;
-	for (int i = 2; i * i <= n; i++) {  // ¡în±îÁö¸¸
-		if (n % i == 0) return false;	// 2ÀÌ»óÀÇ ¾à¼ö°¡ ÀÖÀ¸¸é ¼Ò¼ö ¾Æ´Ô
+	for (int i = 2; i * i <= n; i++) {  // âˆšnê¹Œì§€ë§Œ
+		if (n % i == 0) return false;	// 2ì´ìƒì˜ ì•½ìˆ˜ê°€ ìžˆìœ¼ë©´ ì†Œìˆ˜ ì•„ë‹˜
 	}
 	return true;		
 }
