@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <numeric>
-using std::vector;					// ¹éÁØ 2609¹ø
+using std::vector;					// ë°±ì¤€ 2609ë²ˆ
 
-int gcd(int a, int b) {				// ÃÖ´ë °ø¾à¼ö the greatest common dominator
+int gcd(int a, int b) {				// ìµœëŒ€ ê³µì•½ìˆ˜ the greatest common dominator
 	if (a < b) {
 		std::swap(a, b);
 	}
@@ -17,7 +17,7 @@ int gcd(int a, int b) {				// ÃÖ´ë °ø¾à¼ö the greatest common dominator
 	return a;
 }
 
-int lcm(int a,int b) {				// ÃÖ¼Ò °ø¹è¼ö the least common multiple
+int lcm(int a,int b) {				// ìµœì†Œ ê³µë°°ìˆ˜ the least common multiple
 	return a / gcd(a, b) * b;
 }
 
