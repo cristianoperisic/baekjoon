@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 using std::vector;
-// ¹éÁØ 1259¹ø ÆÓ¸°µå·Ò¼ö
+// ë°±ì¤€ 1259ë²ˆ íŒ°ë¦°ë“œë¡¬ìˆ˜
 int digit(int);
 bool palindrome(int);
 int power(int a, int b);
@@ -35,7 +35,7 @@ bool palindrome(int n) {
 	if (num == 1) {
 		return true;
 	}
-	else if (num % 2 == 1 || num % 2 == 0) {        // n ÀÌ È¦¼ö ÀÚ¸´¼ö?
+	else if (num % 2 == 1 || num % 2 == 0) {        // n ì´ í™€ìˆ˜ ìë¦¿ìˆ˜?
 		for (int i = 1;i <= num / 2;i++) {
 			if ((n % power(10, i)) / power(10, i - 1) != (n % power(10, num - i + 1) / power(10, num - i))) {
 
@@ -47,7 +47,7 @@ bool palindrome(int n) {
 
 	}
 }
-int digit(int n) {					// ¸îÀÚ¸®¼öÀÎµ¥?
+int digit(int n) {					// ëª‡ìë¦¬ìˆ˜ì¸ë°?
 	int k = 1;
 	int cnt = 0;
 	while (n / k != 0) {
