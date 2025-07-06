@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 using std::vector;
-using std::string;								// ¹éÁØ 1541
+using std::string;								// Â¹Ã©ÃÃ˜ 1541
 
 int main(void) {
 	string s;
