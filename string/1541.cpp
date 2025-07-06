@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 using std::vector;
-using std::string;								// ¹éÁØ 1541
+using std::string;								// 백준 1541  문자열 연습
 
 int main(void) {
 	string s;
