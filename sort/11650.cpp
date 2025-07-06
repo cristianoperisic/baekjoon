@@ -4,20 +4,20 @@
 using namespace std;
 using std::vector;
 
-int main(void){						// ¹éÁØ 11650 ÁÂÇ¥ Á¤·ÄÇÏ±â
+int main(void){						// ë°±ì¤€ 11650 ì¢Œí‘œ ì •ë ¬í•˜ê¸°
 	int N;
 	std::cin >> N;
 
-	vector<pair<int, int>> A(N);	// º¤ÅÍ Á¤ÀÇ
+	vector<pair<int, int>> A(N);	// ë²¡í„° ì •ì˜
 	
 	for (int i = 0; i < N; i++) {
-		std::cin >> A[i].first>>A[i].second;//ÀÔ·Â¹Ş°í
+		std::cin >> A[i].first>>A[i].second;//ì…ë ¥ë°›ê³ 
 	}
 
-	sort(A.begin(), A.end());		// ¶óÀÌºê·¯¸®·Î °£´ÜÈ÷ Ã³¸®
+	sort(A.begin(), A.end());		// ë¼ì´ë¸ŒëŸ¬ë¦¬ë¡œ ê°„ë‹¨íˆ ì²˜ë¦¬
 	for (auto& x : A) {
 		cout << x.first << ' ' << x.second << '\n';
-	}								// Ãâ·Â
+	}								// ì¶œë ¥
 
 	return 0;
 }
