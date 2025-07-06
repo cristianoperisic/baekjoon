@@ -2,7 +2,7 @@
 #include <cmath>
 #include <vector>
 #include <algorithm>
-/*using namespace std;
+using namespace std;
 using std::vector;
 
 int main(void) {
@@ -14,19 +14,19 @@ int main(void) {
 		cin >> taehwan[i];
 	}
 
-	sort(taehwan.begin(), taehwan.end()); // ¿À¸§Â÷¼ø Á¤·Ä ¿Ï·á
+	sort(taehwan.begin(), taehwan.end()); // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ ì™„ë£Œ
 
 	double sum = 0;
 	for (int i = 0; i < N; i++) {
-		sum += taehwan[i];			      // ÇÕ ¿Ï·á, NÀ¸·Î ³ª´©¾î¼­ »ê¼úÆò±Õ
+		sum += taehwan[i];			      // í•© ì™„ë£Œ, Nìœ¼ë¡œ ë‚˜ëˆ„ì–´ì„œ ì‚°ìˆ í‰ê· 
 	}
 
-	int center = taehwan[N / 2 ];	  // Áß¾Ó°ª
-	int max = *max_element(taehwan.begin(), taehwan.end()); // ÃÖ´ë, Á¤·ÄÇßÀ¸´Ï ±×³É ¸Ç µÚ¿¡²¨ ÇØµµ µÉµí
-	int min = *min_element(taehwan.begin(), taehwan.end()); // ÃÖ¼Ò, ¿ª½Ã ¸Ç¾Õ ÇØµµ ¤¡¤º
+	int center = taehwan[N / 2 ];	  // ì¤‘ì•™ê°’
+	int max = *max_element(taehwan.begin(), taehwan.end()); // ìµœëŒ€, ì •ë ¬í–ˆìœ¼ë‹ˆ ê·¸ëƒ¥ ë§¨ ë’¤ì—êº¼ í•´ë„ ë ë“¯
+	int min = *min_element(taehwan.begin(), taehwan.end()); // ìµœì†Œ, ì—­ì‹œ ë§¨ì• í•´ë„ ã„±ã…Š
 
-	vector<pair<int, int>> A;								// ÃÖºó°ª Ã£±â À§ÇØ <int, int> º¤ÅÍ »ı¼º
-	A.push_back({ taehwan[0],1 });							// ¸Ç¾Õ¿¡ taehwan[0]À» ³Ö°í È½¼ö 1³ÖÀ½
+	vector<pair<int, int>> A;								// ìµœë¹ˆê°’ ì°¾ê¸° ìœ„í•´ <int, int> ë²¡í„° ìƒì„±
+	A.push_back({ taehwan[0],1 });							// ë§¨ì•ì— taehwan[0]ì„ ë„£ê³  íšŸìˆ˜ 1ë„£ìŒ
 
 	for (int i = 1; i < N;i++) {
 		if (taehwan[i - 1] != taehwan[i]) {
@@ -37,18 +37,18 @@ int main(void) {
 		}
 
 	}
-	sort(A.begin(), A.end(), [](const pair<int, int>& a, const pair<int, int>& b) {	// secondÀÇ Å©±â·Î Á¤·Ä(³»¸²Â÷¼ø)
+	sort(A.begin(), A.end(), [](const pair<int, int>& a, const pair<int, int>& b) {	// secondì˜ í¬ê¸°ë¡œ ì •ë ¬(ë‚´ë¦¼ì°¨ìˆœ)
 		return a.second > b.second;
 		});
 	
-	// A: {°ª, ºóµµ} ½ÖµéÀ» ºóµµ ±âÁØÀ¸·Î ³»¸²Â÷¼ø Á¤·ÄÇÑ »óÅÂ
+	// A: {ê°’, ë¹ˆë„} ìŒë“¤ì„ ë¹ˆë„ ê¸°ì¤€ìœ¼ë¡œ ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬í•œ ìƒíƒœ
 
 	int many;
 	if (A.size() == 1 || A[0].second != A[1].second) {
 		many = A[0].first;
 	}
 	else {
-		many = A[1].first;  // µÎ ¹øÂ°·Î ÀÛÀº ÃÖºó°ª
+		many = A[1].first;  // ë‘ ë²ˆì§¸ë¡œ ì‘ì€ ìµœë¹ˆê°’
 	}
 
 
@@ -58,4 +58,4 @@ int main(void) {
 
 	return 0;
 
-}*/
+}
