@@ -10,7 +10,7 @@ int main(void) {
 	for (int i = 0;i < T;i++) {
 		cin >> Tv[i];
 	}
-	vector<long long> A(101);						// น้มุ 9095, 9461 ดูภฬณชนอ วมทฮฑืทกนึ 	
+	vector<long long> A(101);						// ๋ฐฑ์ค€ 9095, 9461 ๋ค์ด๋๋ฏน ํ”๋ก๊ทธ๋๋ฐ 	
 	A[0] = 1; A[1] = 2;A[2] = 4;
 	for (int i = 3; i < 11;i++) {
 		A[i] = A[i - 1] + A[i - 2] + A[i - 3];
