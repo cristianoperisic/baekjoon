@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-int main(void) {										// ¹éÁØ 9375¹ø map È°¿ë
+int main(void) {										// ë°±ì¤€ 9375ë²ˆ map í™œìš©
 	int N;
 	cin >> N;
 	string str="";
@@ -19,7 +19,7 @@ int main(void) {										// ¹éÁØ 9375¹ø map È°¿ë
 		for (int i = 0;i < K;i++)
 			m[A[i].second]++;
 		int n=1;
-		for (auto x:m){									// x´Â <string,int> ½ÖÀÓ
+		for (auto x:m){									// xëŠ” <string,int> ìŒì„
 			n *= x.second+1;
 		}
 
