@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-int main(void) {
+int main(void) {                  // 7662
     ios::sync_with_stdio(false);  // C I/O 성능 향상
     cin.tie(NULL);                // cin/cout 분리 (입출력 속도 개선)
 
