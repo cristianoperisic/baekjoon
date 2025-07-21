@@ -5,7 +5,7 @@ using namespace std;
 long long sum1(long long denominator, int K, const vector<int> &A);
 
 int main(void) {
-	ios::sync_with_stdio(false);						//1654 ·£¼±ÀÚ¸£±â
+	ios::sync_with_stdio(false);						//1654 ëœì„ ìë¥´ê¸°
 	cin.tie(NULL);
 
 	int K, N;
@@ -19,7 +19,7 @@ int main(void) {
 	long long left = 1;
 	long long answer = 0;
 	while (left <= right) {
-		long long middle = (left + right) / 2;			// ÀÌÁøÅ½»ö!
+		long long middle = (left + right) / 2;			// ì´ì§„ íƒìƒ‰
 		long long sum = sum1(middle, K, A);
 
 		if (sum >= N) {
